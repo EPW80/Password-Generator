@@ -9,10 +9,10 @@ The purpose of this program is to generate a password that will consist of rando
 * JavaScript
 
 ## Website
-https://github.com/EPW80/passwordGenerator.git
+https://github.com/EPW80/Password-Generator.git
 
 ## Deployment
-https://epw80.github.io/passwordGenerator/
+https://epw80.github.io/Password-Generator/
 
 ## Screenshot
 
