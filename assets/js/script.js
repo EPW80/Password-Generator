@@ -9,13 +9,14 @@ function writePassword() {
 
 generateBtn.addEventListener("click", writePassword); //listen for click on password
 
-// come up after user click generate password
-function generatePassword() {
-  var length = 8, //length of string
-    charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+-*/", //set of characters to user
-    retVal = ""; //empty
-  for (var i = 0, n = charset.length; i < length; ++i) { //for loop to generate password
-    retVal += charset.charAt(Math.floor(Math.random() * n)); //random generator
-  }
-  return retVal; //returnvalue
-}
+//  generate password
+function generatePassword(){
+    var length = window.prompt("choose password length between 8 and 128")
+    char = "abcdefghijklmnopqrstuvwkyz"
+    num = "1234567890"
+    passwordText = [""]
+     for(i=0;i < length; i++){
+       passwordText += char.charAt(Math.floor(Math.random() * char.length))
+       return passwordText
+     }
+    };
