@@ -17,5 +17,5 @@ function generatePassword() {
   for (var i = 0, n = charset.length; i < length; ++i) { //for loop to generate password
     retVal += charset.charAt(Math.floor(Math.random() * n)); //random generator
   }
-  return retVal; //returnvalue
+  return retVal; //return value
 }
