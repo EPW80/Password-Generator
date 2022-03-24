@@ -16,8 +16,8 @@ https://epw80.github.io/passwordGenerator/
 
 ## Screenshot
 
-![Portfolio: Erik Williams](/assets/images/screenShot1.png)
-![Portfolio: Erik Williams](/assets/images/screenShot2.png)
+![Password-Generator: Erik Williams](/assets/images/jsImage.png)
+
 
 ## Contribution:
 Crafted by [Erik Williams]
