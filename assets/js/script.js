@@ -23,6 +23,7 @@ function writePassword() {
 }
 
 generateBtn.addEventListener("click", writePassword); //listen for click on password
+
 function generatePassword() {
   var passLength = 0;
   var passUpperCase;
@@ -92,6 +93,11 @@ function generatePassword() {
       }
     }
   }
+}
+
+
+
+
 
   return result;
 
@@ -103,3 +109,6 @@ function generatePassword() {
   }
 }
 }
+
+
+
