@@ -1,5 +1,15 @@
 var generateBtn = document.querySelector("#generate"); //declare variable
 
+var passwordCriteria = {
+ passwordLength: 0,
+
+ passwordLowerCase: ["a", "b", "c", "d", "e", "f", "g","h",
+  "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+
+ passwordUpperCase: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
+"L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+
+}
 //function Write password to the #password input
 function writePassword() {
   var password = generatePassword(); //variable declaration
@@ -9,14 +19,13 @@ function writePassword() {
 
 generateBtn.addEventListener("click", writePassword); //listen for click on password
 
-//  generate password
-function generatePassword(){
-    var length = window.prompt("choose password length between 8 and 128")
-    char = "abcdefghijklmnopqrstuvwkyz"
-    num = "1234567890"
-    passwordText = [""]
-     for(i=0;i < length; i++){
-       passwordText += char.charAt(Math.floor(Math.random() * char.length))
-       return passwordText
-     }
-    };
+//generate password
+function generatePassword() {
+  var length = 8,
+      charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+      retVal = "";
+  for (var i = 0, n = charset.length; i < length; ++i) {
+      retVal += charset.charAt(Math.floor(Math.random() * n));
+  }
+  return retVal;
+}
