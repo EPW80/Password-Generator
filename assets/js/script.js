@@ -11,10 +11,8 @@ var passwordCriteria = {
 
   passwordNumber: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 
-  passwordCharacter: ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "/", "?", "<", ">", ";",
-    "{", "}", "+", "-", "=", ",", "[", "]", ".", "\", "`"]
+  passwordCharacter: ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "/", "?", "<", ">", ";", "{", "}", "+", "-", "=", ",", "[", "]", ".", "\", "`"]
 }
-
 
 function writePassword() {
   var password = generatePassword(); //variable declaration
@@ -59,7 +57,7 @@ function generatePassword() {
          while (passwordCriteria.passwordLength < passLength) {
            
           if (passLowerCase === false && passUpperCase === false && passNumbers === false && passSpecialCharacters === false) {
-            alert("Please select either lowercase, uppercase, numbers or characters)
+            alert("Please select either lowercase, uppercase, numbers or characters!")
             displayPrompt();
            }
 
@@ -95,13 +93,9 @@ function generatePassword() {
   }
 }
 
+return result;
 
-
-
-
-  return result;
-
-  function displayPrompt() {
+function displayPrompt() {
     lowerCase = confirm("Are you sure you want to use lower case letters?");
     upperCase = confirm("Are you sure you want to use upper case letters?");
     passNumbers = confirm("Are you sure you want to use numbers?");
