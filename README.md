@@ -25,4 +25,7 @@ I came across a few challenges making this password generator.  I had a hard tim
 ## Contribution:
 Crafted by [Erik Williams]
 
-### ©️2022 EPW
+## License
+All code on this site is copyright Erik Williams - 2022
+
+#### ©️2022 EPW
