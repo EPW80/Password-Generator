@@ -14,9 +14,12 @@ https://github.com/EPW80/Password-Generator.git
 ## Deployment
 https://epw80.github.io/Password-Generator/
 
-## Screenshot
+## Mock-up
 
 ![Password-Generator: Erik Williams](/assets/images/jsImage.png)
+
+## Challenges 
+I came across a few challenges making this password generator.  I had a hard time trying to figure out how to make sure the user entered a password length between 8 and 128 characters. also, there was a m inor syntax error within the javascript that did not allow me to run code properly. The problem was solved once I researched on-line JS documentation on syntax and template literals.
 
 
 ## Contribution:
