@@ -1,6 +1,7 @@
-var generateBtn = document.querySelector("#generate"); //declare variable
+var generateBtn = document.querySelector("#generate");
 
 var passwordCriteria = {
+  
   passwordLength: 0,
 
   passwordLowerCase: ["a", "b", "c", "d", "e", "f", "g", "h",
@@ -11,9 +12,9 @@ var passwordCriteria = {
 
   passwordNumber: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 
-  passwordCharacter: ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "/", "?", "<", ">", ";", "{", "}", "+", "-", "=", ",", "[", "]", ".", "\", "`"]
+  passwordCharacter:  ["!", "\"", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",",
+  "-", ".", "/", "\\", ":", ";", "<", ">", "=", "?", "@", "[", "]", "^", "_", "`", "{", "}", "|", "~"]
 }
-
 function writePassword() {
   var password = generatePassword(); //variable declaration
   var passwordText = document.querySelector("#password"); //variable declaration
@@ -35,7 +36,7 @@ function generatePassword() {
   result = "";
 
   while (passLength < 8 || passLength > 128) {
-    passLength = prompt("Please enter the amount of characters that you would like your password to consist of. /nNote: Password must be 8 to 128 characters ");
+    passLength = prompt("Please enter a password.\nPassword must be 8 to 128 characters. ");
 
     if (passLength === undefined ) {
       return "Enter Your Password";
@@ -82,7 +83,7 @@ function generatePassword() {
            }
 
            if (passSpecialCharacters === true && passwordCriteria.passwordLength < passLength) {
-            var passChar = passwordCriteria.passwordCharacter[Math.floor(Math.random() * 26)]
+            var passChar = passwordCriteria.passwordCharacter[Math.floor(Math.random() * 32)]
             result = result + passChar;
             passwordCriteria.passwordLength++;
           }
@@ -91,7 +92,6 @@ function generatePassword() {
       }
     }
   }
-}
 
 return result;
 
@@ -100,9 +100,6 @@ function displayPrompt() {
     upperCase = confirm("Are you sure you want to use upper case letters?");
     passNumbers = confirm("Are you sure you want to use numbers?");
     passSpecialCharacters = confirm("Are you sure you want to use any special characters?");
-  }
 }
 }
-
-
-
+}
