@@ -120,7 +120,7 @@ function generatePassword() {
     //return the generated password back to the calling function
     return result;
 
-    //internal function to prompt the user for criteria
+    //internal function to prompt the user for criteria required
     function displayPrompt() {
       lowerCase = confirm("Are you sure you want to use lower case letters?");
       upperCase = confirm("Are you sure you want to use upper case letters?");
