@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- type declaration -->
+<html lang="en">
+  <!-- language:en -->
+
+  <!-- compatability, document title, stylesheet lick -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- wrapper class -->
+      <!-- header content -->
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <!-- card class -->
+        <div class="card-header">
+          <!-- card header class -->
+          <!-- body content -->
+          <h2>Generate a Password</h2>
+        </div>
+        <!-- no use really, just takes care of a bunch kids that belong to classes, attributes blahhhhhhh etc. -->
+        <div class="card-body">
+          <!-- card-bpdy class -->
+          <!--  used in a form, to collect user inputs like comments or review -->
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <!-- card-footer class -->
+          <button id="generate" class="btn">Generate Password</button>
+          <!-- generate password button -->
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <!-- javascript link -->
+  </body>
+</html>
+<!-- close body and html -->
