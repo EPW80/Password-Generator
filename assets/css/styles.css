@@ -48,7 +48,7 @@ header {
 }
 
 .card-header::after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
@@ -64,7 +64,7 @@ header {
 }
 
 .card-footer::before {
-  content: ' ';
+  content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
@@ -72,7 +72,7 @@ header {
 }
 /* element styling */
 .card-footer::after {
-  content: ' ';
+  content: " ";
   display: block;
   clear: both;
 }
